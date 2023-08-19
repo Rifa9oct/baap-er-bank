@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+    <!-- Telwind CSS link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <h1 class="text-center mt-28 text-violet-600 text-5xl font-bold">Let's get some  <span class="text-fuchsia-600">Money</span> !!!</h1>
+    <div class="grid grid-cols-3 mt-16 gap-5 w-3/4 mx-auto ">
+        <div class="bg-green-500 p-5 rounded-md text-2xl text-white font-bold">
+            <h3>Deposit</h3>
+            <p>$<span  id="deposit-field">00</span></p>
+        </div>
+        <div class="bg-fuchsia-500 p-5 rounded-md text-2xl text-white font-bold">
+            <h3>Withdraw</h3>
+            <p>$<span id="withdraw-field">00</span></p>
+        </div>
+        <div class=" bg-orange-500 p-5 rounded-md text-2xl text-white font-bold">
+            <h3>Balance</h3>
+            <p>$<span id="balance-field">1240</span></p>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 mt-16 gap-5 w-3/4 mx-auto">
+        <div class="bg-sky-400 p-5 rounded-md text-white font-medium">
+            <h3 class="mb-5 text-3xl ml-5 pt-5">Please Deposit</h3>
+            <input id="deposit-input-field" class="block mx-auto p-1 rounded w-3/4 text-black" type="text" placeholder="$ amount you want you deposit">
+            <button id="btn-deposit" class="mt-5 bg-blue-800 px-10 hover:bg-blue-600 py-2 rounded-md font-bold ml-16 mb-5">Deposit</button>
+        </div>
+        <div class="bg-violet-500 p-5 rounded-md text-white font-medium">
+            <h3 class="mb-5 text-3xl ml-5 pt-5">Please Withdraw</h3>
+            <input id="withdraw-input-field" class="block mx-auto p-1 rounded w-3/4 text-black" type="text" placeholder="$ amount you want you withdraw">
+            <button id="btn-withdraw" class="mt-5 bg-blue-800 px-8 py-2 rounded-md font-bold hover:bg-blue-600 ml-16  mb-5">Withdraw</button>
+        </div>
+    </div>
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
